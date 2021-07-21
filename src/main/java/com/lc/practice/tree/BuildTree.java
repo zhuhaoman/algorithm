@@ -19,6 +19,9 @@ public class BuildTree {
      * @param postorder
      * @return
      * @link https://leetcode-cn.com/leetbook/read/data-structure-binary-tree/xo98qt/
+     *
+     * 从前序与中序遍历序列构造二叉树
+     * @link https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
      */
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         //后序遍历数组长度
@@ -46,5 +49,6 @@ public class BuildTree {
         root.setLeft(helper(postorder,in_left,middle-1));
         return root;
     }
+
 
 }
