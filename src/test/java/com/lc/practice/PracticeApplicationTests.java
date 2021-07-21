@@ -10,4 +10,9 @@ class PracticeApplicationTests {
     void contextLoads() {
     }
 
+    @Test
+    void test1() {
+        int max = 0;
+        System.out.println(max < -1 ? -1 : 0);
+    }
 }
